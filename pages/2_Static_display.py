@@ -11,7 +11,7 @@ import streamlit as st
 # from streamlit_tags import st_tags, st_tags_sidebar
 
 ## 数据录入
-path_data = '../data/static_data_6_test.json'
+path_data = './data/static_data_6_test.json'
 name_data = 'static_data_6.json'
 path_query_data = path_data + name_data
 path_query_data = path_data

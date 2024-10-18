@@ -47,7 +47,7 @@ st.markdown('''
 st.markdown("## 意图样例表格展示")
 
 # 路径设置
-path_base_data = '../data/source_data/'
+path_base_data = './data/source_data/'
 path_test_case = path_base_data + 'test_case/'
 path_resource = path_base_data + 'knowledge_base/resource/'
 
