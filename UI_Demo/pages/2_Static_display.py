@@ -8,7 +8,7 @@
 ## 导入库
 import json
 import streamlit as st
-from streamlit_tags import st_tags, st_tags_sidebar
+# from streamlit_tags import st_tags, st_tags_sidebar
 
 ## 数据录入
 path_data = '../data/static_data_6_test.json'
@@ -119,17 +119,18 @@ if st.session_state.button:
     # query2index_dict
 
     # st.write(f'该查询的意图标签index是：{query_select_index}')
+    st.write(f'该查询的意图标签是：{output_label}')
 
     # st.write(f'该查询的意图标签如下，可人为调整：')
 
     # 设置可编辑的标签
-    keywords_label = st_tags(
-        label='该查询的意图标签如下，可人为调整：',
-        text='Press enter to add more',
-        value=output_label,
-        suggestions=['five', 'six', 'seven', 'eight', 'nine', 'three', 'eleven', 'ten', 'four'],
-        # maxtags=maxtags,
-        key="label")
+    # keywords_label = st_tags(
+    #     label='该查询的意图标签如下，可人为调整：',
+    #     text='Press enter to add more',
+    #     value=output_label,
+    #     suggestions=['five', 'six', 'seven', 'eight', 'nine', 'three', 'eleven', 'ten', 'four'],
+    #     # maxtags=maxtags,
+    #     key="label")
 
 
     # st.write(keywords)
@@ -142,15 +143,15 @@ if st.session_state.button:
 
     st.markdown("## 意图类型展示")
 
-    # st.write(f'该查询的意图类型是：{intent_type}')
+    st.write(f'该查询的意图类型是：{intent_type}')
 
-    keywords_intent = st_tags(
-        label='该查询的意图类型如下，可人为调整：',
-        text='Press enter to add more',
-        value=[intent_type],
-        # suggestions=['five', 'six', 'seven', 'eight', 'nine', 'three', 'eleven', 'ten', 'four'],
-        # maxtags=maxtags,
-        key="intent")
+    # keywords_intent = st_tags(
+    #     label='该查询的意图类型如下，可人为调整：',
+    #     text='Press enter to add more',
+    #     value=[intent_type],
+    #     # suggestions=['five', 'six', 'seven', 'eight', 'nine', 'three', 'eleven', 'ten', 'four'],
+    #     # maxtags=maxtags,
+    #     key="intent")
     
     # intent_type = keywords_intent[0]
     intent_type_intro = intent_type_intro_dict[intent_type]

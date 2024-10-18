@@ -14,6 +14,8 @@ import streamlit as st
 
 st.set_page_config(page_title="Plotting Demo", page_icon="📈")
 
+st.markdown("# Available Component")
+
 st.markdown("# Note")
 
 st.markdown("## 折叠笔记")
